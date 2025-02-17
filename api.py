@@ -12,30 +12,66 @@ from job_manager import Event, append_event, jobs_lock, jobs
 app = Flask(__name__)
 CORS(app, resources={r"/api/*":{"origins":"*"}})
 
-def kickoff_crew(job_id:str, question:str):
+#def kickoff_crew(job_id:str, question:str):
+#    print(f"Running crew for {job_id} with question {question}")
+#
+#    results = None
+#    try:
+#        legalEnvironmentCrew = LegalEnvironmentCrew(job_id)
+#        legalEnvironmentCrew.setup_crew(question)
+#        results = legalEnvironmentCrew.kickoff()
+#        results = str(results)
+#    except Exception as e:
+#        print(f"Crew Failed: {str(e)}")
+#        append_event(job_id, f"CREW FAILED: {str(e)}")
+#
+#        with jobs_lock:
+#            jobs[job_id].status = "ERROR"
+#            jobs[job_id].result = str(e)
+#        return
+#
+#    with jobs_lock:
+#        jobs[job_id].status = "COMPLETED"
+#        jobs[job_id].result = results
+#        jobs[job_id].events.append(Event(
+#            message="CREW COMPLETED", timestamp=datetime.now()
+#        ))
+
+def kickoff_crew(job_id: str, question: str):
     print(f"Running crew for {job_id} with question {question}")
-    
-    results = None
     try:
         legalEnvironmentCrew = LegalEnvironmentCrew(job_id)
         legalEnvironmentCrew.setup_crew(question)
-        results = legalEnvironmentCrew.kickoff()
-        results = str(results)
+        answer = legalEnvironmentCrew.kickoff()
+        
+        # Retry loop: if answer is invalid, try up to 3 times.
+        retries = 0
+        while (answer is None or str(answer).strip() == "" or "Invalid response from LLM call" in str(answer)) and retries < 3:
+            #print("Received invalid response, retrying crew call...")
+            append_event(job_id, "Creando la respuesta más optima..")
+            retries += 1
+            answer = legalEnvironmentCrew.kickoff()
     except Exception as e:
         print(f"Crew Failed: {str(e)}")
         append_event(job_id, f"CREW FAILED: {str(e)}")
-
         with jobs_lock:
             jobs[job_id].status = "ERROR"
             jobs[job_id].result = str(e)
         return
-    
+
+    # If, after retries, no valid answer is produced, mark job as error.
+    if answer is None or str(answer).strip() == "" or "Invalid response from LLM call" in str(answer):
+        with jobs_lock:
+            jobs[job_id].status = "ERROR"
+            jobs[job_id].result = "Crew did not produce a valid response."
+        return
+
     with jobs_lock:
         jobs[job_id].status = "COMPLETED"
-        jobs[job_id].result = results
-        jobs[job_id].events.append(Event(
-            message="CREW COMPLETED", timestamp=datetime.now()
-        ))
+        jobs[job_id].result = str(answer)
+        jobs[job_id].events.append(
+            Event(message="CREW COMPLETED", timestamp=datetime.now())
+        )
 
 
 @app.route("/api/crew/start", methods=['POST'])
@@ -68,7 +104,7 @@ def get_status(job_id):
 
 def kickoff_crew_messages(job_id:str, question:str, messages ):
     print(f"Running crew messages for {job_id} with question {question}")
-    
+
     results = None
     try:
         legal_environmental_crew_messages = LegalEnvironmentalCrewMessages(job_id)
@@ -85,14 +121,14 @@ def kickoff_crew_messages(job_id:str, question:str, messages ):
             jobs[job_id].status = "ERROR"
             jobs[job_id].result = str(e)
         return
-    
+
     with jobs_lock:
         jobs[job_id].status = "COMPLETED"
         jobs[job_id].result = results
         jobs[job_id].events.append(Event(
             message="CREW COMPLETED", timestamp=datetime.now()
         ))
-  
+
 
 @app.route("/api/crew/messages/start", methods=['POST'])
 def run_crew_messages():
@@ -124,28 +160,5 @@ def get_status_messages(job_id):
                     "result":job.result,
                     "events":[{"timestamp": event.timestamp.isoformat(), "message":event.message} for event in job.events]}), 200
 
-
-#@app.route("/api/crew/messages", methods=['POST'])
-#def start_messages_crew():
-    #data = request.json
-    #if not data or 'messages' not in data or 'question' not in data:
-    #    abort(400, description="Invalid request with missing data")
-#
-    #messages = data['messages']
-    #question = data['question']
-    #print(f"Running crew for messages")
-    #result = None
-    #try:
-    #    legal_environmental_crew_messages = LegalEnvironmentalCrewMessages()
-    #    legal_environmental_crew_messages.setup_crew(messages, question)
-    #    result = legal_environmental_crew_messages.kickoff()
-    #    result = str(result)
-    #    #print("result")
-    #    #print(result)
-    #    return jsonify({"result": result}), 200
-    #except Exception as e:
-    #    print(f"Error: {str(e)}")  # Log the error for debugging
-    #    return jsonify({"error": "An error occurred while processing the request."}), 500  # Return a valid error response
-
 if __name__ == '__main__':
-    app.run(debug=True, port=3001)
+    app.run(host='0.0.0.0', port=3001)
