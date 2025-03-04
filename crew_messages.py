@@ -37,7 +37,7 @@ class LegalEnvironmentalCrewMessages:
         #agente_revision_cumplimiento = agents.agente_revision_cumplimiento()
 
         # SETUP TASKS
-        tasks = LegalEnvironmentTasks("1234")
+        tasks = LegalEnvironmentTasks(self.job_id)
         tarea_super_mensajes = tasks.tarea_super_mensajes(super_agente, messages, question)
         #tarea_revision_legal = tasks.tarea_revision_legal_messages(agente_revision_cumplimiento, question)
 

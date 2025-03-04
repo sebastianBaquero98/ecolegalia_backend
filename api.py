@@ -12,30 +12,6 @@ from job_manager import Event, append_event, jobs_lock, jobs
 app = Flask(__name__)
 CORS(app, resources={r"/api/*":{"origins":"*"}})
 
-#def kickoff_crew(job_id:str, question:str):
-#    print(f"Running crew for {job_id} with question {question}")
-#
-#    results = None
-#    try:
-#        legalEnvironmentCrew = LegalEnvironmentCrew(job_id)
-#        legalEnvironmentCrew.setup_crew(question)
-#        results = legalEnvironmentCrew.kickoff()
-#        results = str(results)
-#    except Exception as e:
-#        print(f"Crew Failed: {str(e)}")
-#        append_event(job_id, f"CREW FAILED: {str(e)}")
-#
-#        with jobs_lock:
-#            jobs[job_id].status = "ERROR"
-#            jobs[job_id].result = str(e)
-#        return
-#
-#    with jobs_lock:
-#        jobs[job_id].status = "COMPLETED"
-#        jobs[job_id].result = results
-#        jobs[job_id].events.append(Event(
-#            message="CREW COMPLETED", timestamp=datetime.now()
-#        ))
 
 def kickoff_crew(job_id: str, question: str):
     print(f"Running crew for {job_id} with question {question}")
@@ -43,11 +19,13 @@ def kickoff_crew(job_id: str, question: str):
         legalEnvironmentCrew = LegalEnvironmentCrew(job_id)
         legalEnvironmentCrew.setup_crew(question)
         answer = legalEnvironmentCrew.kickoff()
-        
+
         # Retry loop: if answer is invalid, try up to 3 times.
         retries = 0
-        while (answer is None or str(answer).strip() == "" or "Invalid response from LLM call" in str(answer)) and retries < 3:
-            #print("Received invalid response, retrying crew call...")
+        #print("------- THIS IS ANSWER ------")
+        #print(answer)
+        while (answer is None or str(answer).strip() == "" or "Invalid" in str(answer)) and retries < 3:
+            print("Received invalid response, retrying crew call...")
             append_event(job_id, "Creando la respuesta más optima..")
             retries += 1
             answer = legalEnvironmentCrew.kickoff()

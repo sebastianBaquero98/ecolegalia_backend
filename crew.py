@@ -31,20 +31,20 @@ class LegalEnvironmentCrew:
 
         # SETUP AGENTS
         agents = LegalEnvironmentAgents()
-        super_agente = agents.super_agente()
-        #agente_revision_cumplimiento = agents.agente_revision_cumplimiento()
-        #agente_revisor_estructura = agents.agente_revisor_estructura()
+        agente_investigacion_legal = agents.agente_investigacion_legal()
+        agente_revision_cumplimiento = agents.agente_revision_cumplimiento()
+        agente_revisor_estructura = agents.agente_revisor_estructura()
 
         # SETUP TASKS
         tasks = LegalEnvironmentTasks(self.job_id)
-        tarea_super = tasks.tarea_super(super_agente, question)
-        #tarea_revision_legal = tasks.tarea_revision_legal(agente_revision_cumplimiento)
-        #tarea_estructura = tasks.tarea_estructura(agente_revision_cumplimiento, question)
+        tarea_investigacion = tasks.tarea_investigacion(agente_investigacion_legal, question)
+        tarea_revision_legal = tasks.tarea_revision_legal(agente_revision_cumplimiento)
+        tarea_estructura = tasks.tarea_estructura(agente_revisor_estructura, question)
 
         # CREATE CREW
         self.crew = Crew(
-            agents=[super_agente],
-            tasks=[tarea_super],
+            agents=[agente_investigacion_legal,agente_revision_cumplimiento,agente_revisor_estructura],
+            tasks=[tarea_investigacion,tarea_revision_legal,tarea_estructura],
             process=Process.sequential,
             verbose=False,
             step_callback=self.append_event_callback,
