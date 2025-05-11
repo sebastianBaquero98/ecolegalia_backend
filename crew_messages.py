@@ -25,10 +25,8 @@ class LegalEnvironmentalCrewMessages:
 
         elif isinstance(step, AgentFinish):
             split_text = step.text.split("Final Answer:")
-            if len(split_text) == 1:
-                append_event(self.job_id, "Finish:"+split_text.replace("Thought:", ""))
-            else:
-                append_event(self.job_id, "Finish:"+split_text[0].strip().replace("Thought:", ""))
+            text = split_text[0].strip().replace("Thought:", "")
+            append_event(self.job_id, f"Finish:{text}")
 
     def setup_crew(self, messages: List[Message], question:str):
         # SETUP AGENTS
@@ -38,6 +36,10 @@ class LegalEnvironmentalCrewMessages:
 
         # SETUP TASKS
         tasks = LegalEnvironmentTasks(self.job_id)
+        print("THIS IS CHAT HISTORY")
+        print(messages)
+        print("THIS IS QUESTION")
+        print(question)
         tarea_super_mensajes = tasks.tarea_super_mensajes(super_agente, messages, question)
         #tarea_revision_legal = tasks.tarea_revision_legal_messages(agente_revision_cumplimiento, question)
 
@@ -48,6 +50,7 @@ class LegalEnvironmentalCrewMessages:
             process=Process.sequential,
             verbose=False,
             step_callback=self.append_event_callback,
+            language="spanish"
         )
 
     def kickoff(self):

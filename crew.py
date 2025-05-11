@@ -5,26 +5,25 @@ from job_manager import append_event, parse_text_to_json
 from tasks import LegalEnvironmentTasks
 from crewai.agents.parser import AgentAction, AgentFinish
 from typing import List
-
+import json
 class LegalEnvironmentCrew:
     def __init__(self,job_id: str):
         self.crew = None
         self.job_id = job_id
 
     def append_event_callback(self, step):
+        # 1) On every AgentAction, parse it into JSON and append.
         if isinstance(step, AgentAction):
-            #print(f"Action: {step.text}")
-            # Convert into dict string information
-            r = parse_text_to_json(step.text.encode('utf-8').decode('utf-8'))  # Ensure proper encoding
-            append_event(self.job_id, r)
-
+            cargo = parse_text_to_json(step.text)
+            append_event(self.job_id, json.dumps(cargo, ensure_ascii=False))
+        # 2) On AgentFinish, grab the raw text _after_ our marker and append that
         elif isinstance(step, AgentFinish):
-            split_text = step.text.split("Final Answer:")
-            if len(split_text) == 1:
-                append_event(self.job_id, "Finish:"+split_text.replace("Thought:", ""))
+            FULL_MARK = "### FINAL_ANSWER:"
+            if FULL_MARK in step.text:
+                final = step.text.split(FULL_MARK, 1)[1].strip()
             else:
-                append_event(self.job_id, "Finish:"+split_text[0].strip().replace("Thought:", ""))
-
+                final = step.text.strip()
+            append_event(self.job_id, f"FINAL_ANSWER:{final}")
         
     def setup_crew(self, question: str):
         print(f"Setting up crew for {self.job_id} and question {question}")
@@ -48,6 +47,7 @@ class LegalEnvironmentCrew:
             process=Process.sequential,
             verbose=False,
             step_callback=self.append_event_callback,
+            language="spanish"
         )
 
     def kickoff(self):
