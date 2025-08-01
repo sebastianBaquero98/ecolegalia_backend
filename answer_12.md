@@ -86,11 +86,11 @@ Para una planta procesadora de banano con líneas de lavado y tratamiento poscos
 
 ---
 
-## **5. EXPLICACIÓN DETALLADA Y REQUISITOS ESPECÍFICOS**
+## **5. EXPLICACIÓN DETALLADA Y REQUISITOS ESPECÍFICOS** (MINIMOS)
 
 ### **A. PERMISO DE VERTIMIENTOS**
 
-**Requisitos técnicos específicos:**
+**Requisitos técnicos específicos:** (PONER MINIMOS)
 
 1. **Caracterización fisicoquímica** del vertimiento:
 
