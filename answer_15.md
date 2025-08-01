@@ -1,8 +1,8 @@
-# **LICENCIAS Y PERMISOS PARA TORRES EÓLICAS DE 80 MW EN JUAN DE ACOSTA, ATLÁNTICO**
+# **LICENCIAS Y PERMISOS PARA TORRES EÓLICAS DE 80 MW EN JUAN DE ACOSTA, ATLÁNTICO** (RESPUESTA EJEMPLO MUY BUENA)
 
 ## **1. TIPO DE TRÁMITE REQUERIDO**
 
-**Licencia Ambiental ante la ANLA - Competencia Nacional**
+**Licencia Ambiental ante la ANLA - Competencia Nacional** (EL LITERAL 2 NO B NO CORRESPONDE)
 
 Conforme al **artículo 2.2.2.3.2.2, numeral 4, literal b)** del Decreto 1076 de 2015, modificado por el **Decreto 852 de 2024**, la instalación de torres eólicas para generación de 80 MW requiere **licencia ambiental** ante la Autoridad Nacional de Licencias Ambientales (ANLA), por tratarse de:
 
@@ -105,12 +105,12 @@ El solicitante **DEBE** obtener **certificado de presencia de comunidades étnic
 - **Artículo 96 de la Ley 633 de 2000:** Modifica el régimen de tasas ambientales
 - **Resolución No. 000921 de 2025 del ANLA:** Establece las tarifas actualizadas para 2025
 
-### **Componentes del costo:**
+### **Componentes del costo:** (NO ESTOY SEGURA)
 
 1. **Tasa de evaluación:** Aproximadamente $450-650 millones de pesos (para proyectos de 80 MW)
 2. **Tasa de seguimiento:** 1% anual sobre los ingresos brutos del proyecto
 3. **Costos de estudios:** $800 millones - $1.200 millones (EIA, estudios complementarios)
-4. **Inversión del 1%:** Si aplica según Decreto 1900 de 2006
+4. **Inversión del 1%:** Si aplica según Decreto 1900 de 2006 (ESTA INVERSIÓN NO TIENE NADA QUE VER CON EL VALOR DE LA LICENCIA)
 
 ### **Autoliquidación:**
 
