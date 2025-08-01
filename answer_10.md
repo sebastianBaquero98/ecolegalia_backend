@@ -83,9 +83,10 @@ Los términos de referencia corresponden específicamente a **"Sistemas de Trans
 - Considera aspectos de emisiones atmosféricas y ruido
 - Aborda impactos por instalación de válvulas, tuberías y plataformas
 
-## 5. CONSULTA PREVIA
+## 5. CONSULTA PREVIA ( DEBE QUEDAR IGUAL PARA TODAS LAS RESPUESTAS)
 
-**OBLIGATORIO:** Solicitar **Certificado de Presencia de Comunidades Étnicas** ante el **Ministerio del Interior** antes de radicar la solicitud de licencia ambiental.
+**OBLIGATORIO:** Realizar la solicitud de **Determinación de Procedencia y oportunidad de consulta previa** ante el **Ministerio del Interior** antes de radicar la solicitud de licencia ambiental. https://www.mininterior.gov.co/wp-content/uploads/2024/04/anexo-1-solicitud-determinacion-procedencia-oportunidad-consulta-previa-v8.doc (AJUSTAR EL NOMBRE DEL TRAMITE Y LINK) 
+- Una vez radicada la solicitud la entidad emitirá su pronunciamiento a traves de un acto administrativo.
 
 **Marco normativo:**
 
@@ -95,8 +96,8 @@ Los términos de referencia corresponden específicamente a **"Sistemas de Trans
 
 **Procedimiento:**
 
-- Si hay presencia de comunidades étnicas: **CONSULTA PREVIA OBLIGATORIA**
-- Duración aproximada: 6-12 meses adicionales al proceso de licenciamiento
+- Si hay presencia de comunidades étnicas procede la **CONSULTA PREVIA OBLIGATORIA**
+- Duración aproximada: 2-12 meses adicionales al proceso de licenciamiento 
 - Debe realizarse antes de la evaluación del EIA
 
 ## 6. COSTOS DE LA LICENCIA
@@ -119,7 +120,8 @@ Los términos de referencia corresponden específicamente a **"Sistemas de Trans
 - Pago antes de radicar la solicitud
 - Actualización de tarifas anual
 
-**Costo estimado:** Entre $50-200 millones de pesos, dependiendo de las características específicas del proyecto.
+**Costo estimado:** Entre $50-200 millones de pesos, dependiendo de las características específicas del proyecto. (COSTO ESTIMADO ELABORACIÓN DEL ESTUDIO AMBIENTAL SUPRIMIR) 
+Costo de la evaluación ambiental si debe IR (AJUSTAR)
 
 ## 7. MARCO NORMATIVO
 
@@ -139,7 +141,7 @@ Los términos de referencia corresponden específicamente a **"Sistemas de Trans
 
 - **Decreto 1320 de 1998:** Consulta previa
 - **Resolución 855 de 2022:** Modificaciones de licencia ambiental
-- **Guías técnicas MADS:** Control de emisiones y compuestos orgánicos volátiles
+- **Guías técnicas MADS:** Control de emisiones y compuestos orgánicos volátiles (PORQUE LA ESTA PONIENDO AQUI)
 
 ## 8. CANALES DE CONTACTO - ANLA
 
