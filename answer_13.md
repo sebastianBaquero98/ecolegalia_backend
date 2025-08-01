@@ -14,7 +14,7 @@ Para el desarrollo de un sendero ecoturístico y centro de interpretación ambie
 - **Base legal:** Decreto 1076 de 2015, Artículo 2.2.2.1.7.4
 - **Autoridad:** Parques Nacionales Naturales de Colombia como entidad competente para el manejo y administración del Sistema de Parques Nacionales Naturales
 
-### C. EVALUACIÓN DE LICENCIA AMBIENTAL (si aplica)
+### C. EVALUACIÓN DE LICENCIA AMBIENTAL (si aplica) (NO APLICA LOS SENDEROS DE INTERPRETACIÓN NO REQUIEREN LICENCIA DECRETO 1753)
 
 - **Base legal:** Decreto 1076 de 2015, numeral 21 del artículo 2.2.2.3.2.3
 - **Criterio:** Construcción de infraestructura en áreas protegidas del SINAP que pueda producir deterioro grave a los recursos naturales renovables
@@ -227,9 +227,9 @@ Para el desarrollo de un sendero ecoturístico y centro de interpretación ambie
 
 #### 3. ESTUDIOS DE CAPACIDAD DE CARGA
 
-- **Base legal:** Concepto Jurídico MADS sobre capacidad de carga turística
-- **Metodología:** Según lineamientos del Ministerio de Ambiente
-- **Actualización:** Bienal con base en monitoreo de impactos
+- **Base legal:** Concepto Jurídico MADS sobre capacidad de carga turística (CUAL CONCEPTO)
+- **Metodología:** Según lineamientos del Ministerio de Ambiente (CUAL LINEAMIENTO)
+- **Actualización:** Bienal con base en monitoreo de impactos (ESTO QUE ES)
 
 **CONTACTOS CLAVE:**
 
