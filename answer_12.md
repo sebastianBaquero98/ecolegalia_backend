@@ -82,7 +82,7 @@ Para una planta procesadora de banano con líneas de lavado y tratamiento poscos
 
 3. **Decreto 3930 de 2010** (compilado en Decreto 1076)
    - **Artículo 38:** Obligaciones de usuarios industriales
-   - **Artículo 53:** Procedimiento para otorgamiento de permisos
+   - **Artículo 53:** Procedimiento para otorgamiento de permisos (ESTE ARTICULO CORRESPONDE AL PLAN DE CUMPLIMIENTO NO AL PROCEDIMIENTO)
 
 ---
 
@@ -273,7 +273,7 @@ Para una planta procesadora de banano con líneas de lavado y tratamiento poscos
 
 ---
 
-## **COSTOS ESTIMADOS**
+## **COSTOS ESTIMADOS** (COLOCAR FUENTE PORQUE DE DONDE SACO ESTOS VALORES)
 
 - **Tasas ambientales CORPAMAG:** $2,000,000 - $5,000,000
 - **Estudios técnicos especializados:** $15,000,000 - $30,000,000
