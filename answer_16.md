@@ -1,4 +1,6 @@
-## Clasificación del Tema
+## Clasificación del Tema (PORQUE LA ESTRUCTURA DE ESTA RESPUESTA ES DISTINTA?
+
+LA RESPUESTA NO ESTÁ BIEN ENFOCADA, NO DIJO EL TRAMITE PARA ADELANTAR EL DAA, PORQUE QUIEN DEBE DEFINIR SI SE REQUIERE O NO ES EL ANLA
 
 La consulta "Una empresa va a desarrollar una plataforma de cargue de carbón en la Bahía de Cartagena. No se construirá muelle, solo barcazas flotantes. ¿Se requiere DAA? ¿Qué entidades intervienen?" corresponde a: **Diagnóstico Ambiental de Alternativas**
 
