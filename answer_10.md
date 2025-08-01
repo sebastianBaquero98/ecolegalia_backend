@@ -39,7 +39,7 @@ El solicitante **DEBE presentar una solicitud formal ante ANLA** para que determ
 
 Una vez aprobado el DAA (si se requiere) o determinado que no es necesario, se debe elaborar el **EIA conforme al artículo 2.2.2.3.5.1 del Decreto 1076 de 2015** y la **Metodología General para la Elaboración y Presentación de Estudios Ambientales (Resolución 1402 de 2018)**.
 
-**Contenido obligatorio del EIA:**
+**Contenido obligatorio del EIA:** (SON 12 ASPECTOS DE LOS CUALES FALTA DEMANDA DE RECURSOS NATURALES Y PERMISOS ASOCIADOS, EVALUACIÓN ECONOMICA DE IMPACTOS, PLANES Y PROGRAMAS QUE ESTA MEZCLANDO EN EL PLAN DE MANEJO AMBIENTAL, PLAN DE INVERSIÓN DEL 1%)
 
 ### 3.1 Información General
 
@@ -64,7 +64,7 @@ Una vez aprobado el DAA (si se requiere) o determinado que no es necesario, se d
 - Zonificación de manejo ambiental del área de influencia
 - Identificación de áreas de exclusión, restricción y uso múltiple
 
-### 3.5 Plan de Manejo Ambiental (PMA)
+### 3.5 Plan de Manejo Ambiental (PMA) (ESTE ES UNO DE LOS PLANES AQUI ESTA MEZCLANDO VARIOS PLANES)
 
 - Programas de prevención, mitigación, corrección y compensación
 - Programa de seguimiento y monitoreo
@@ -185,7 +185,7 @@ Los términos de referencia corresponden específicamente a **"Sistemas de Trans
 
 **PASOS INMEDIATOS:**
 
-1. Contactar ANLA para asesoría inicial
+1. Contactar ANLA para asesoría inicial (ESTE DISCLAIMER NO ESTA BIEN)
 2. Solicitar certificado de presencia de comunidades étnicas
 3. Presentar solicitud formal para pronunciamiento sobre DAA
 4. Iniciar elaboración de estudios ambientales con consultores especializados
