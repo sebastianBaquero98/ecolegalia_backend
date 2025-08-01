@@ -99,7 +99,7 @@
 2. **Documentos base:** Planos, estudios técnicos específicos según el permiso
 3. **Tiempos:** Variables según el tipo de permiso (15-60 días hábiles)
 
-#### **PASO 3: Licencia de Construcción**
+#### **PASO 3: Licencia de Construcción** (ESPECIFICAR MAS SOBRE LA LICENCIA)
 
 1. **Radicar ante Secretaría de Planeación o Curaduría**
 2. **Documentos:** Planos completos, permisos ambientales obtenidos, estudios técnicos
