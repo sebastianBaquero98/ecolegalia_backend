@@ -122,7 +122,7 @@ Para una planta procesadora de banano con líneas de lavado y tratamiento poscos
 
 ### **B. CONCESIÓN DE AGUAS**
 
-**Requisitos específicos:**
+**Requisitos MINIMOS:**
 
 - Caudal requerido (L/s)
 - Fuente de captación identificada
@@ -213,13 +213,13 @@ Para una planta procesadora de banano con líneas de lavado y tratamiento poscos
 
 ### **A. AUTORIDADES AMBIENTALES**
 
-1. **Permiso de emisiones atmosféricas** (si aplica)
+1. **Permiso de emisiones atmosféricas** (si aplica) (EN CASO QUE APLIQUE)---- 
 
    - Para calderas o sistemas de secado
    - Autoridad: CORPAMAG
    - Normativa: Resolución 2254 de 2017
 
-2. **Aprovechamiento forestal** (si requiere remoción de vegetación)
+2. **Aprovechamiento forestal** (EN CASO QUE requierA remoción de vegetación)
    - Para adecuación del terreno
    - Autoridad: CORPAMAG
    - Normativa: Decreto 1076 de 2015, Título 4
@@ -275,7 +275,7 @@ Para una planta procesadora de banano con líneas de lavado y tratamiento poscos
 
 ## **COSTOS ESTIMADOS** (COLOCAR FUENTE PORQUE DE DONDE SACO ESTOS VALORES)
 
-- **Tasas ambientales CORPAMAG:** $2,000,000 - $5,000,000
+- **Tasas ambientales CORPAMAG:** $2,000,000 - $5,000,000 
 - **Estudios técnicos especializados:** $15,000,000 - $30,000,000
 - **Sistemas de tratamiento:** $50,000,000 - $200,000,000
 - **Consultoría especializada:** $10,000,000 - $25,000,000
