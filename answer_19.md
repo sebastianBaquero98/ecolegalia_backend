@@ -6,7 +6,7 @@ Según los **artículos 2.2.2.3.2.2 y 2.2.2.3.2.3 del Decreto 1076 de 2015**, la
 
 El artículo 2.2.2.3.2.2 establece la competencia de ANLA para proyectos de gran envergadura, mientras que el artículo 2.2.2.3.2.3 define la competencia de las Corporaciones Autónomas Regionales. Sin embargo, las vías terciarias municipales no están incluidas en el listado de actividades que requieren licenciamiento ambiental.
 
-**Según el Concepto Jurídico 221003_012895 de 2022**:
+**Según el Concepto Jurídico 221003_012895 de 2022** (QUIEN EXPIDE ESTE CONCEPTO):
 
 > "Las carreteras terciarias son aquellas vías de acceso que unen las cabeceras municipales con sus veredas o unen veredas entre sí. Las carreteras consideradas como Terciarias deben funcionar en afirmado."
 
@@ -53,7 +53,7 @@ Dado que las vías terciarias rurales no requieren licencia ambiental, **no es n
 - Territorio históricamente habitado por pueblos originarios
 - **Alta probabilidad** de requerir consulta previa
 
-## 6. COSTOS DE LA LICENCIA
+## 6. COSTOS DE LA LICENCIA (NO SE DEBERIA INCLUIIR ESTE ITEM SI NO APLICA LICENCIA)
 
 **NO APLICAN** los costos de licenciamiento ambiental del artículo 28 de la Ley 344 de 1996, artículo 96 de la Ley 633 de 2000, ni la Resolución 921 de 2025 del ANLA, ya que **el proyecto no requiere licencia ambiental**.
 
@@ -63,7 +63,7 @@ Dado que las vías terciarias rurales no requieren licencia ambiental, **no es n
 - **Aprovechamiento forestal:** Según volumen a intervenir
 - **Evaluación y seguimiento:** Costos por servicios específicos de CAR
 
-**Nota:** No se utiliza la plataforma VITAL del ANLA; los trámites se realizan directamente con CORPOAMAZONIA.
+**Nota:** No se utiliza la plataforma VITAL del ANLA; los trámites se realizan directamente con CORPOAMAZONIA. (ESTO NO DEBERIA DECIRLO)
 
 ## 7. MARCO NORMATIVO APLICABLE
 
