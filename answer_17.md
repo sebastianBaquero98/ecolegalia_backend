@@ -120,7 +120,7 @@
 - **Cumplimiento de normativa de ruido** durante construcción
 - **Plan de manejo de tráfico** durante construcción
 
-### **CON AUTORIDADES MUNICIPALES:**
+### **CON AUTORIDADES MUNICIPALES:** (DEBE DECIR CUALES SON LAS AUTORIDADES MUNICIPALES)
 
 - **Licencia comercial** para funcionamiento
 - **Permiso de uso del suelo comercial**
@@ -128,13 +128,13 @@
 - **Concepto sanitario**
 - **Conexiones de servicios públicos**
 
-### **CON OTRAS AUTORIDADES:**
+### **CON OTRAS AUTORIDADES:** (CUALES SON LAS AUTORIDADES)
 
 - **Concepto de movilidad** si genera alto impacto vial
 - **Permisos especiales** si afecta espacio público
 - **Registro mercantil** de la actividad comercial
 
-### **RECOMENDACIÓN ESTRATÉGICA:**
+### **RECOMENDACIÓN ESTRATÉGICA:** 
 
 Dado que se trata de una construcción urbana con sótanos y parqueaderos, es **FUNDAMENTAL** iniciar con una **consulta integral ante CARDER** para determinar exactamente qué permisos ambientales específicos aplican al proyecto particular, ya que cada caso puede tener particularidades según la ubicación, características del predio y diseño específico del centro comercial.
 
